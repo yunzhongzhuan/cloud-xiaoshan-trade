@@ -1157,7 +1157,7 @@ function push_files_to_files_page(files_items,isPrepend){
 		div.menu_download_element.parent = div;
 		div.menu_download_element.onclick = function(){
 			let html_element = document.createElement('div');
-			html_element.innerHTML = "<p style=\"display:none;\"><a href='" + download_web_url + this.parent.url + "' target='_blank'>电信下载（稳定）</a></p><p style=\"display:none;\"><a href='https://ddos-guard-net-download.yunzhongzhuan.com" + this.parent.url + "' target='_blank'>联通下载（稳定）</a></p><p><a style=\"color:#0051c3;border-bottom:2px dashed #0051c3;font-weight:bold;\" href='https://download.cloud.xiaoshan.trade" + this.parent.url + "' target='_blank'>点击下载</a></p>";
+			html_element.innerHTML = "<p style=\"display:none;\"><a href='" + download_web_url + this.parent.url + "' target='_blank'>电信下载（稳定）</a></p><p style=\"display:none;\"><a href='https://ddos-guard-net-download.yunzhongzhuan.com" + this.parent.url + "' target='_blank'>联通下载（稳定）</a></p><p><a style=\"color:#0051c3;border-bottom:2px dashed #0051c3;font-weight:bold;\" href='https://get.cloud.xiaoshan.trade" + this.parent.url + "' target='_blank'>点击下载</a></p>";
 
 			if(false&&cdn_cgi_trace_download_hkg==true){ // eu.org from https get to https post method
 				let html_element_p_items = html_element.getElementsByTagName('p');
@@ -1532,7 +1532,7 @@ function copy_text(text){
 }
 // 当前网站官方网站地址
 let web_url = window.location.protocol + "//" + window.location.href.split('://')[1].split('/')[0];
-let download_web_url = window.location.protocol + "//download.cloud.xiaoshan.trade";
+let download_web_url = window.location.protocol + "//get.cloud.xiaoshan.trade";
 let upload_web_url = window.location.protocol + "//upload.cloud.xiaoshan.trade";
 
 let api_upload_web_url;
@@ -1975,7 +1975,7 @@ files_main.oncontextmenu=function(e){
 		}
 		files_download_button.onclick = function(){
 			let html_element = document.createElement('div');
-			html_element.innerHTML = "<p style=\"display:none;\"><a href='" + download_web_url + files_items_selected_array[0].url + "' target='_blank'>电信下载（稳定）</a></p><p style=\"display:none;\"><a href='https://ddos-guard-net-download.yunzhongzhuan.com" + files_items_selected_array[0].url + "' target='_blank'>联通下载（稳定）</a></p><p><a style=\"color:#0051c3;border-bottom:2px dashed #0051c3;font-weight:bold;\" href='https://download.cloud.xiaoshan.trade" + files_items_selected_array[0].url + "' target='_blank'>点击下载</a></p>";
+			html_element.innerHTML = "<p style=\"display:none;\"><a href='" + download_web_url + files_items_selected_array[0].url + "' target='_blank'>电信下载（稳定）</a></p><p style=\"display:none;\"><a href='https://ddos-guard-net-download.yunzhongzhuan.com" + files_items_selected_array[0].url + "' target='_blank'>联通下载（稳定）</a></p><p><a style=\"color:#0051c3;border-bottom:2px dashed #0051c3;font-weight:bold;\" href='https://get.cloud.xiaoshan.trade" + files_items_selected_array[0].url + "' target='_blank'>点击下载</a></p>";
 
 			if(false&&cdn_cgi_trace_download_hkg==true){ // eu.org from https get to https post method
 				let html_element_p_items = html_element.getElementsByTagName('p');
